@@ -12,3 +12,7 @@ bounty2 = Bounty.new( wrex_hash )
 shepard_hash = { 'name' => 'Commander Shepard', 'species' => 'Human', 'bounty_value' => 10000, 'homeworld' => 'Earth', 'favourite_weapon' => 'Sub Machine Gun'}
 
 bounty3 = Bounty.new( shepard_hash )
+
+p bounty1
+p bounty2
+p bounty3
