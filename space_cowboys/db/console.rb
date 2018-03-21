@@ -1,6 +1,8 @@
 require('pry')
 require_relative('models/bounty')
 
+Bounty.delete_all
+
 garrus_hash = { 'name' => 'Garrus Vakarian', 'species' => 'Turian', 'bounty_value' => 7000, 'homeworld' => 'Palaven', 'favourite_weapon' => 'Sniper Rifle'}
 
 bounty1 = Bounty.new( garrus_hash )
@@ -13,6 +15,9 @@ shepard_hash = { 'name' => 'Commander Shepard', 'species' => 'Human', 'bounty_va
 
 bounty3 = Bounty.new( shepard_hash )
 
-p bounty1
-p bounty2
-p bounty3
+bounty1.save()
+bounty2.save()
+bounty3.save()
+
+binding.pry
+nil
